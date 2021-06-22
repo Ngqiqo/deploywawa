@@ -1,0 +1,65 @@
+{% extends "wawaap/base.html" %}
+{% load static %}
+{% block content %}
+
+<!--HEADER-->
+<nav class="navbar navbar-expand-sm d-md-block  d-none   navbar-light bg-white">
+    <div class="container">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarsExample07">
+    <ul class="navbar-nav mx-auto">
+    <li class="nav-item active">
+      <a class="nav-link" href="{% url 'commerce' %}">E-commerce</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="{% url 'business' %}">Business</a>
+    </li>
+    <li class="nav-item ">
+    <a class="nav-link" href="{% url 'webapp' %}">Webapp</a>
+    </li>
+    <li class="nav-item ">
+    <a class="nav-link" href="{% url 'art' %}">Trending</a>
+    </li>
+ 
+    
+    </ul>
+  
+    </div>
+    </div>
+    </nav>
+
+
+
+
+
+
+
+
+        <div class="shadow my-2">
+        <img src="{% static 'wawaap/white.png' %}"  alt="Card" width="100%" height="200px">
+        </div>
+  
+<!--BODY-->
+<div class="container">
+
+
+<div class="row">
+{% for x in all %}
+<div class="col-sm-12 col-lg-3">
+<div class="shadow-lg zoom mx-3 my-3">
+<img src="{{ x.image.url }}" alt="{{ x.type }}"   width="300px" height="250px">
+</div>
+</div>
+{% endfor %}
+</div>
+
+
+</div>
+
+<br>
+  
+
+
+{% endblock %}
