@@ -1,0 +1,1 @@
+web gunicorn Wawa.wsgi:apllication --log-file -
