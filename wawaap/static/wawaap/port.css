@@ -1,0 +1,100 @@
+
+.zoom:hover {
+    transform: scale(1.2);
+    }
+    .zoom { transition: 0.9s;
+    }
+
+    
+.tag{<0p>
+}
+.ifot1{
+Position: relative;
+animation-name:ifot1;
+animation-duration:1s;
+animation-iteration-count:inf;
+}
+@keyframes ifot1{
+0%{bottom:-60px ;}
+100%{bottom:0px;}
+}
+
+.ifot2{
+Position: relative;
+animation-name:ifot2;
+animation-duration:2s;
+animation-iteration-count:inf;
+}
+
+@keyframes ifot2{
+0%{bottom:-60px ;}
+100%{bottom:0px;}
+}
+
+.ifot3{
+Position: relative;
+animation-name:ifot3;
+animation-duration:3s;
+animation-iteration-count:inf;
+}
+
+@keyframes ifot3{
+0%{bottom:-60px ;}
+100%{bottom:0px;}
+}
+
+.ifot4{
+Position: relative;
+animation-name:ifot4;
+animation-duration:2s;
+animation-iteration-count:inf;
+}
+
+@keyframes ifot4{
+0%{left:-100px ;}
+100%{left:0px;}
+}
+.ifot5{
+Position: relative;
+animation-name:ifot5;
+animation-duration:2s;
+animation-iteration-count:inf;
+}
+
+@keyframes ifot5{
+0%{right:-100px ;}
+100%{right:0px;}
+}
+
+
+
+.twist {
+    width: 190px;
+    height: 170px;
+    background: transparent;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform: 1s;
+}
+
+.twist:hover {
+    width: 320px;
+    height: 300px;
+    -webkit-transform: rotate(360deg); /* Safari */
+    transform: rotate(360deg);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,114 @@
+{% extends "wawaap/base.html" %}
+{% load static %}
+{% block content %}
+
+<nav class="navbar navbar-expand-sm d-md-block  d-none   navbar-light bg-white">
+    <div class="container">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    
+    <div class="collapse navbar-collapse" id="navbarsExample07">
+    
+    <ul class="navbar-nav mx-auto">
+    <li class="nav-item active">
+    <a class="nav-link" href="{% url 'commerce' %}">E-commerce</a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="{% url 'business' %}">Business</a>
+    </li>
+    <li class="nav-item ">
+    <a class="nav-link" href="{% url 'webapp' %}">Webapp</a>
+    </li>
+    <li class="nav-item ">
+    <a class="nav-link" href="{% url 'art' %}">Trending</a>
+    </li>
+
+    </ul>
+  
+    </div>
+    </div>
+    </nav>
+     
+<div class="d-md-block  d-none ">
+<img src="{% static 'wawaap/longer.png' %}" width="100%" height="360px">
+</div>
+
+
+
+
+    
+<div class="d-block d-sm-none ">
+  <img src="{% static 'wawaap/text38.png' %}" width="100%" height="200px">
+  </div>
+  
+
+<div class="container">
+
+
+    <div class="row">
+    
+
+<div class="col-sm-10 col-md-4 col-lg-4">
+  <span class="ifot1">
+    <div class="card shadow">
+        <div class="card-header text-light text-center bg-dark">
+          <h3>Web Design</h3>
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title ">We build clean and responsive websites.</h5>
+          <a href="{% url 'gallery' %}" class="btn btn-md btn-outline-primary shadow">show more</a>
+        </div>
+      </div>
+      </span>
+</div>
+
+<div class="col-sm-10 col-md-4 col-lg-4">
+    <br>
+    <span class="ifot2">
+    <div class="card shadow">
+        <div class="card-header text-light text-center bg-dark">
+          <h3>Graphic Design</h3>
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title ">We create cool and modern designs.</h5>
+       
+          <a href="#" class="btn btn-md btn-outline-primary shadow">show more</a>
+        </div>
+      </div>
+      </span>
+      <br>
+</div>
+
+<div class="col-sm-10 col-md-4 col-lg-4">
+    
+  <span class="ifot3">
+    <div class="card shadow">
+        <div class="card-header text-light text-center bg-dark">
+          <h3>SEO Services</h3>
+        </div>
+        <div class="card-body text-center">
+          <h5 class="card-title ">We do everything that is web related.</h5>
+         
+          <a href="#" class="btn btn-md btn-outline-primary shadow">show more</a></div>
+      </div>
+      </span>
+</div>
+</div>
+
+
+</div>
+
+    </div>
+    
+</div>
+
+<br>
+
+
+
+
+
+
+
+{% endblock %}
